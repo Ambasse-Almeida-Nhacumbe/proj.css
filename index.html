@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#inscricao">Inscrição</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="tema">Alternar Tema</button>
+    </header>
+
+    <section id="perfil">
+        <div class="card">
+            <img src="IMG_20250331_085159.jpg" alt="Foto de Perfil">
+            <h2>Ambasse Almeida Nhacumbe</h2>
+            <p>Desenvolvedor fullStack formado pelo ISPT.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <table>
+            <tr>
+                <th>Habilidade</th><th>Nível</th>
+            </tr>
+            <tr><td>HTML</td><td>Avançado</td></tr>
+            <tr><td>CSS</td><td>Intermediário</td></tr>
+            <tr><td>JavaScript</td><td>Básico</td></tr>
+        </table>
+    </section>
+
+    <section id="projetos" class="grid">
+        <div class="projeto">Gestão hoteleira</div>
+        <div class="projeto">Ifood</div>
+        <div class="projeto">Projeto 3</div>
+    </section>
+
+    <section id="inscricao">
+        <h2>Inscreva-se</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Senha" required>
+            <label sexo="sexo">Sexo:</label>
+            <select name = "sexo" id="sexo">
+            <option value= "Masculino">Masculino</option>
+            <option value= "Femenino">Femenino</option>
+            <option value= "Outros">Outros</option>
+            </select><br><br>
+            <label for="Data">Data de Nascimento</label>
+            <input type="date"><br><br>
+            <label pais="pais">Pais</label>
+            <input type="text"><br><br>
+            <input type="checkbox">
+            <label for= "termos">Aceito os termos e condicoes</label><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
